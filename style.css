@@ -40,7 +40,7 @@ header{
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 0;
+	padding: 10px 10px;
 }
 
 header img{
@@ -102,20 +102,17 @@ margin: auto;
 }
 
 .Gallery-list{
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	width: 1000px;
-	gap: 72px;
-	justify-content: space-between;
-	align-items: center;
-	gap: 16px;
+	gap: 32px;
 }
 
 .Gallery-item img{
 	width: 100%;
 }
 
-.Gallery-item p, .Gallery-item h3{
+.Gallery-item h3{
 	text-align: center;
 }
 
@@ -131,7 +128,7 @@ margin: auto;
 /*フッターここまで*/
 
 /*スマートフォン向けスタイル*/
-@media (max-width:600px){
+@media (max-width:700px){
 
 body{
 	width: 100%;
@@ -140,6 +137,7 @@ body{
 
 .header-element{
 	width: 100%;
+	margin: 10px 10px;
 }
 
 .profire{
